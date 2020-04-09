@@ -41,9 +41,9 @@ def get_args():
   (options, args) = parser.parse_args()
   if not options.bits:
     if options.algorithm == "yespower" or options.algorithm == "X11" or options.algorithm == "X13" or options.algorithm == "X15":
-      options.bits = 0x1e0ffff0
+      options.bits = 0x1f3fffff
     else:
-      options.bits = 0x1d00ffff
+      options.bits = 0x1f3fffff
   return options
 
 def get_algorithm(options):
